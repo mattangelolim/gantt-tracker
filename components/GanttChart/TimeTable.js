@@ -92,7 +92,7 @@ export default function TimeTable({
 
       weekRow.push(
         <div key={j} style={{ ...ganttTimePeriod, outline: 'none' }}>
-          <span style={{ ...ganttTimePeriodSpan, color: '#bbb' }}>
+          <span style={{ ...ganttTimePeriodSpan, color: '#3E455B' }}>
             {getDayOfWeek(currYear, currMonth - 1, j - 1)}
           </span>
         </div>
