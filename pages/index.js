@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className="main">
-        <h1 className="title">Gantt Tracker</h1>
+        <h1 className="title">INSERT GANTT CHART TITLE HERE</h1>
         <GanttChart />
       </main>
       <style jsx>{`
