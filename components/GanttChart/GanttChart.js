@@ -30,6 +30,19 @@ export default function GanttChart() {
     );
   }, []);
 
+  useEffect(() => {
+    fetch('http://localhost:8000/intranet')
+      .then(response => response.json())
+      .then(data => {
+        setTasks(data?.tasks);
+        setTaskDurations(data?.taskDurations);
+        console.log(data)
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  })
+
   return (
     <div id="gantt-container">
       <Grid>
